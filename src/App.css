@@ -348,6 +348,7 @@ Typical {
   background-color: #222222;
   box-shadow: 0px 0px 5px 4px #333333;
   border-radius: 50px;
+  width: 700px;
 }
 
 .row {
