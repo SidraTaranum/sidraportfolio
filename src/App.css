@@ -1,0 +1,525 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* color: #fff; */
+}
+
+.loader {
+  background: #1d1e22;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bodani Moda", serif;
+  z-index: 1;
+  flex-direction: column;
+}
+
+.wavy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+
+.wavy span {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 8em;
+  text-transform: uppercase;
+  animation: animate 1s ease-in-out infinite;
+  animation-delay: 1s;
+  font-weight: bolder;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-40px);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
+.lineChildren {
+  transform: translate(0, 400px);
+}
+.lineParent {
+  overflow: hidden;
+}
+.header_dp {
+  clip-path: inset(100% 0% 0% 0%);
+  transition: clip-path 3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.header_dp.is-reveal {
+  clip-path: inset(0% 0% 0% 0%);
+}
+.navbar {
+  background-color: #1d1e22;
+  color: #fff;
+}
+.navbar-nav {
+  margin-left: auto;
+  font-size: 1.5rem;
+}
+.nav-item .nav-link {
+  color: aliceblue;
+  margin: 0px 1.5rem;
+  font-family: Roboto Slab, serif;
+}
+
+.Home {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1d1e22;
+  flex-wrap: wrap;
+}
+.header_title {
+  /* border: 2px dashed green; */
+  color: #fff;
+  width: 400px;
+  font-family: League Spartan;
+}
+Typical {
+  font-family: League Spartan;
+}
+.header_title h2 {
+  margin-bottom: 40px;
+  /* opacity: 0; */
+}
+.btn {
+  font-family: Open Sans;
+  font-size: 1rem;
+}
+
+.header_img img {
+  /* border: 2px dashed blue; */
+  height: 400px;
+  /* opacity:0; */
+}
+.Social-icon {
+  font-size: 2rem;
+  margin-right: -7rem;
+}
+.Social-icon i {
+  margin: 20px 0px;
+}
+.Icon a {
+  text-decoration: none;
+  color: #eee;
+}
+.Icon {
+  border: 2px solid #fff;
+  width: 80px;
+  margin: 20px 0;
+  border-radius: 50px;
+  text-align: center;
+}
+.Icon:hover {
+  background: #eee;
+  color: #000;
+  width: 80px;
+  border-radius: 40px;
+}
+/* about */
+.main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1d1e22;
+  min-height: 100vh;
+}
+.container {
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top:320px;
+  
+}
+.social-icon i {
+  margin: 1rem;
+  font-size: 3rem;
+  color: #fff;
+}
+.social-icon i:hover {
+  color: #f3ca20;
+}
+.about_img {
+  opacity: 0.9;
+  width: 400px;
+  height: 600px;
+}
+.cards:hover .about_img {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.fa-graduation-cap,
+.fa-laptop-code {
+  font-size: 5rem;
+  color: #fff;
+  position: relative;
+  top:60px;
+}
+.fa-graduation-cap:hover {
+  color: #f3ca20;
+}
+.fa-laptop-code:hover {
+  color: #f3ca20;
+}
+
+.container .cards {
+  position: relative;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  background: #0c002b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.container .cards::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+.container .cards .content {
+  padding: 30px;
+  text-align: center;
+}
+.container .cards .content h2 {
+  position: absolute;
+  top: 0.8rem;
+  right: 30px;
+  font-size: 4em;
+  font-weight: 800;
+  color: #f3ca20;
+  z-index: 1;
+  opacity: 0.5;
+  transition: 0.5s;
+  font-family: League Spartan;
+}
+.container .cards:hover .content h2 {
+  opacity: 1;
+  transform: translateY(-30px);
+  transition: 2s;
+}
+.container .cards .content h5 {
+  position: relative;
+  top:70px;
+  font-size: 2em;
+  color: #eee;
+  z-index: 2;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  transition: 0.5s;
+
+}
+.container .cards .content p {
+  position: relative;
+  top:70px;
+  font-size: 2em;
+  color: #eee;
+  z-index: 2;
+  font-weight: 300;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  font-family: League Spartan;
+}
+.container .cards:hover .content h3,
+.container .cards:hover .content p {
+  opacity: 1;
+}
+.container .cards span {
+  transition: 0.5s;
+  opacity: 0;
+}
+.container .cards:hover span {
+  opacity: 1;
+}
+.container .cards span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #f3ca20);
+  animation: study_div 2s linear infinite;
+}
+@keyframes study_div {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.container .cards span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #f3ca20);
+  animation: study_div2 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes study_div2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.container .cards span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, transparent, #f3ca20);
+  animation: study_div3 2s linear infinite;
+}
+@keyframes study_div3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.container .cards span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, #f3ca20);
+  animation: study_div4 2s linear infinite;
+}
+@keyframes study_div4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Skill */
+.skill_section {
+  background-color: #1d1e22;
+  color: #fff;
+}
+.skill_section h1 {
+  background-color: #1d1e22;
+  color: #f3ca20;
+  font-family: League Spartan;
+}
+.skill {
+  /* border: 3px solid red;  */
+  background-color: #222222;
+  box-shadow: 0px 0px 5px 4px #333333;
+  border-radius: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.div1 {
+  width: 5rem;
+  position: relative;
+  right: 100px;
+}
+.div2 {
+  width: 80px;
+  position: relative;
+  left: -50px;
+}
+.skillName {
+  position: relative;
+  top: -60px;
+  left: 120px;
+}
+/* projects */
+.project-section {
+  background-color: #1d1e22;
+}
+.project-section h1 {
+  background-color: #1d1e22;
+  color: #f3ca20;
+  font-family: League Spartan;
+}
+.project {
+  /* border: 3px solid green; */
+  background-color: #222222;
+  box-shadow: 0px 0px 5px 4px #333333;
+  display: flex;
+  margin: 0px auto;
+  width: 60%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  /* height: 10px; */
+  margin: 1rem;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+/* contact  */
+.contact-section {
+  background-color: #1d1e22;
+  /* margin-top: 2px; */
+}
+.contact-section h2 {
+  font-family: League Spartan;
+  color: #f3ca20;
+}
+.contact {
+  box-shadow: 0px 0px 5px 4px #333333;
+  background-color: #222222;
+  color: #fff;
+  padding-top: 1rem;
+}
+
+/* modal  */
+.openBtn {
+  position: relative;
+  z-index: 1;
+}
+.closebtn {
+  position: relative;
+  top: -30px;
+  left: 200px;
+  font-size: 2rem;
+}
+.closebtn:hover {
+  color: rgb(243, 19, 64);
+}
+.ThankYou {
+  font-family: cursive;
+}
+.modalBox {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 50px;
+  z-index: 100;
+}
+.emoji {
+  font-size: 3rem;
+}
+.parentOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.footer {
+  background-color: #1d1e22;
+  color: #fff;
+}
+.card-img-top {
+  /* width: 100px; */
+  height: 200px;
+}
+
+/* phone  */
+@media screen and (max-width: 480px) {
+  .header_title {
+    width: 300px;
+  }
+  /* main section */
+  .wavy span {
+    font-size: 3.9em;
+ 
+  }
+  /* Home  */
+  .Social-icon {
+    display: none;
+  }
+
+/* about  */
+.about_img {
+  margin-top: 2rem;
+}
+
+  .skill {
+    /* border: 3px solid red;  */
+    background-color: #08001b;
+    /* box-shadow: 0px 0px 3px 4px grey; */
+    border-radius: 0px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .div1 {
+    width: 40px;
+    position: relative;
+    right: 64px;
+  }
+  .div2 {
+    width: 80px;
+    position: relative;
+    left: -0px;
+  }
+  .skillName {
+    position: relative;
+    top: 6px;
+    left: -10px;
+  }
+ 
+
+/*google map  */
+iframe{
+  width: 320px !important;
+}
+}

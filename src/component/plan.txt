@@ -1,0 +1,36 @@
+1) project section (+)
+2) contact section & mail functionality(+)
+3) styles entire site:
+  i) Navbar(+)
+  ii) header(profile_pic convert in png)(+)
+  iii) About(+)
+  iv) Skill(+)
+4) Make Responsive(+)
+
+review and changes
+
+-> Home (add text that blink) +
+-> About(add text and images) + -mypic add & png
+-> Skill +
+-> Project(add projects) + -Link
+-> contact(design popup msg alert msg) (+) 
+
+
+
+main page : size incease, font family  +
+about : BCA dark + 
+contact heading hr  
+whatsApp ISSUE... -
+
+8-12 : javascript
+
+1-3 : React-Native
+
+3-5 : interview preprations HR round
+
+5-6 : Resume , portfolio
+
+9-11 :English
+11-12 : soft-skill
+
+
